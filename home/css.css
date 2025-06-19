@@ -50,4 +50,200 @@ a{
         justify-content: inherit;
     }
 
+        #signup {
+        display: none;
+        /* Inicialmente invisível */
+        opacity: 0;
+        /* Torna a div invisível */
+        transform: translateY(100%);
+        /* Coloca a div fora da tela, abaixo */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        /* Animação suave de opacidade e movimento */
+    }
+
+    #signup.show {
+        display: block;
+        /* Torna a div visível */
+        opacity: 1;
+        /* Torna a div visível */
+        transform: translateY(0);
+        /* Move a div para a posição original (de baixo para cima) */
+    }
+
+
+
+    .signup {
+        height: auto;
+        width: 1000;
+        margin: auto auto auto auto;
+        justify-content: center;
+        justify-items: center;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .signup-window {
+        height: auto;
+        width: 800px;
+        background-color: rgb(17, 16, 31);
+        margin: auto auto auto auto;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        border: solid 5px #fff;
+        border-radius: 25px 25px 25px 25px;
+
+
+    }
+
+    .signup-header {
+        height: 80px;
+        width: 100%;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+
+        margin: 10 auto 0 auto;
+    }
+
+    .signup-form {
+        height: 75%;
+        width: 100%;
+        margin: 0 auto 0 auto;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .signup-form form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto auto auto;
+        width: 80%;
+    }
+
+    .signup-form label {
+        color: #fff;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: bold;
+        font-size: 25px;
+        width: 90%;
+
+    }
+
+    .signup-form input {
+        height: 50px;
+        width: 100%;
+        font-weight: bold;
+        margin: auto auto 20 auto;
+        font-size: 16px;
+        padding: 10px;
+
+    }
+
+    .signup-form textarea {
+        font-size: 16px;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        height: 100px;
+        padding: 10px;
+        box-sizing: border-box;
+        resize: none;
+    }
+
+    .signup-form button {
+        all: unset;
+        width: 250px;
+        height: 50px;
+        background-color: #ff0042;
+        color: #fff;
+        text-align: center;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        border-radius: 10px 10px 10px 10px;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 20 auto 20 auto;
+
+    }
+
+
+    .signup .close {
+        width: 20px;
+        aspect-ratio: 1/1;
+        margin: 10 50 auto auto;
+        text-align: center;
+    }
+
+    .signup .space {
+        width: 20px;
+        height: auto;
+        margin: auto auto auto 50;
+
+    }
+
+    .signup .title {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+
+
+    .signup .title1 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 0 auto;
+        text-align: center;
+
+
+    }
+
+    .signup .title2 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 0 auto;
+        text-align: center;
+
+
+    }
+
+    .signup a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    }
+
+    .signup .title i {
+        color: #fff;
+        font-size: 22px;
+    }
+
+    .signup .close i {
+        color: #fff;
+        font-size: 22px;
+        border: solid 5px #fff;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+        height: 42px;
+        width: 42px;
+        display: flex;
+        /* Usado para centralizar o ícone */
+        align-items: center;
+        /* Centraliza verticalmente */
+        justify-content: center;
+        /* Centraliza horizontalmente */
+    }
+
 }
