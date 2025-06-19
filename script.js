@@ -40,4 +40,28 @@ document.getElementById("signup-button").addEventListener("click", function() {
     }
   });
 
+
+document.querySelector(".create-account").addEventListener("click", function () {
+    document.getElementById("form-register").style.display = "flex";
+});
+document.querySelector(".create-account").addEventListener("click", function () {
+    document.getElementById("form-login").style.display = "none";
+    document.getElementById("title-register").style.display = "flex";
+    document.getElementById("title-login").style.display = "none";
+
+    
+});
+
+document.querySelector(".login-account").addEventListener("click", function () {
+    document.getElementById("form-login").style.display = "flex";
+});
+document.querySelector(".login-account").addEventListener("click", function () {
+    document.getElementById("form-register").style.display = "none";
+    document.getElementById("title-register").style.display = "none";
+    document.getElementById("title-login").style.display = "flex";
+});
+
+
+
+
   window.addEventListener("load", executeCodes);

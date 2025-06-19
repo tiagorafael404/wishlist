@@ -34,40 +34,41 @@
                 <div class="space"></div>
                 <div class="title">
                     <div class="title1"><i class="fa fa-envelope"></i></div>
-                    <div class="title2"><a>Contact me</a></div>
+                    <div class="title2" id="title-register"><a>Create an account</a></div>
+                    <div class="title2" id="title-login"><a>Login</a></div>
+                    
                 </div>
                 <div class="close"><i class="fa fa-close" id="close"></i></div>
             </div>
 
             <div class="signup-form">
 
-                <form action="https://formsubmit.co/x2scale@gmail.com" method="POST">
-                    <label for="name">Name</label>
-                    <input type="name" name="name" id="name" placeholder="Name" required>
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" placeholder="..." required></textarea>
+                <form id="form-login">
+                    <label for="email-login">E-mail</label>
+                    <input type="email-login" name="email-login" placeholder="Email Address" required>
+                    <label for="password-login">Password</label>
+                    <input type="password-login" name="password-login" id="name-login" placeholder="Password" required>
                     <button type="submit">Send</button>
+                    <div class="create-account"><a>create-account</a></div>
+                    
 
-                    <input type="hidden" name="_captcha" value="false">
+                </form>
 
-                    <input type="hidden" name="_next" value="http://vazerk.com">
-
-                    <input type="hidden" name="_subject" value="X2SCALE">
-
-                    <input type="text" name="_honey" style="display:none">
-
-                    <input type="hidden" name="_template" value="box">
-
-                    <input type="hidden" name="_blacklist"
-                        value="free money, buy now, click here, discount, cheap, viagra, make money, merda, onlyfans">
-
-                    <input type="hidden" name="_cc" value="x2scale@gmail.com">
+                <form id="form-register">
+                    <label for="name-register">Name</label>
+                    <input type="name-register" name="name-register" id="name-register" placeholder="Name" required>
+                    <label for="email-register">E-mail</label>
+                    <input type="email-register" name="email-register" placeholder="Email Address" required>
+                    <label for="password-login">Password</label>
+                    <input type="password-login" name="password-login" id="name-login" placeholder="Password" required>
+                    <button type="submit">Send</button>
+                    <div class="login-account"><a>login</a></div>
 
                 </form>
 
             </div>
+
+
 
         </div>
     </div>

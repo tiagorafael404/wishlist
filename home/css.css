@@ -33,8 +33,13 @@ a{
     font-family: "Space Mono", monospace;
 }
 
+#form-login{
+    display: none;
+}
 
-
+#title-login{
+    display: none;
+}
 
 
 @media screen and (min-width: 1251px) {
@@ -73,14 +78,13 @@ a{
 
 
     .signup {
-        height: auto;
-        width: 1000;
+        height: 100%;
+        width: 100%;
         margin: auto auto auto auto;
         justify-content: center;
         justify-items: center;
         position: fixed;
-        bottom: 0px;
-        right: 0px;
+        top: 20%
     }
 
     .signup-window {
