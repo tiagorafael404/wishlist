@@ -1,0 +1,53 @@
+html {
+    padding: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;           /* 100vw e 100vh para 100% da janela */
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: auto;
+}
+
+body {
+    background-color: rgb(21, 21, 21);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 3 auto auto auto;
+    
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Fjalla One", sans-serif;
+}
+
+a{
+    font-family: "Space Mono", monospace;
+}
+
+
+
+
+
+@media screen and (min-width: 1251px) {
+
+
+    .mypage {
+        display: inherit;
+        height: inherit;
+        margin: auto;
+        width: 70%;
+        padding: 0px;
+        flex-direction: inherit;
+        justify-content: inherit;
+    }
+
+}
