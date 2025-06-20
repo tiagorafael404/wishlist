@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="/home/css.css">
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <script src="script.js" defer></script>
+    
+    <script src="auth.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js"></script>
+
     <link rel="stylesheet" href="/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
@@ -45,25 +50,27 @@
 
                 <form id="form-login">
                     <label for="email-login">E-mail</label>
-                    <input type="email-login" name="email-login" placeholder="Email Address" required>
-                    <label for="password-login">Password</label>
-                    <input type="password-login" name="password-login" id="name-login" placeholder="Password" required>
-                    <button type="submit">Send</button>
-                    <div class="create-account"><a>create-account</a></div>
-                    
+                    <input type="email" name="email-login" id="email-login" placeholder="Email Address" required>
 
+                    <label for="password-login">Password</label>
+                    <input type="password" name="password-login" id="password-login" placeholder="Password" required>
+
+                    <button type="submit">Login</button>
+                    <div class="create-account"><a>create-account</a></div>
                 </form>
 
                 <form id="form-register">
-                    <label for="name-register">Name</label>
-                    <input type="name-register" name="name-register" id="name-register" placeholder="Name" required>
-                    <label for="email-register">E-mail</label>
-                    <input type="email-register" name="email-register" placeholder="Email Address" required>
-                    <label for="password-login">Password</label>
-                    <input type="password-login" name="password-login" id="name-login" placeholder="Password" required>
-                    <button type="submit">Send</button>
-                    <div class="login-account"><a>login</a></div>
+                    <label for="name-register">Name</label> 
+                    <input type="text" name="name-register" id="name-register" placeholder="Name" required> 
 
+                    <label for="email-register">E-mail</label>
+                    <input type="email" name="email-register" id="email-register" placeholder="Email Address" required>
+
+                    <label for="password-register">Password</label> 
+                    <input type="password" name="password-register" id="password-register" placeholder="Password" required>
+
+                    <button type="submit">Register Account</button> 
+                    <div class="login-account"><a>login</a></div>
                 </form>
 
             </div>
