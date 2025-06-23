@@ -1,3 +1,8 @@
+function registerUser() {
+  console.log("Usuário registrado com sucesso!");
+}
+
+
 document.getElementById("signup-button").addEventListener("click", function() {
     var divmenu = document.getElementById("signup");
   
